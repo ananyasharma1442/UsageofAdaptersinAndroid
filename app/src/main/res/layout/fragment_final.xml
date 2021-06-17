@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#332727"
+        android:scaleType="centerCrop"
+        android:src="@drawable/travel" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/user"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:id="@+id/maintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Login into this new world !!"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt1"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Username:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtxt1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt1"
+            android:textColor="@color/white"
+            android:hint="someone@username"
+            android:textColorHint="@color/white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:id="@+id/pass"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:layout_marginRight="50dp"
+            />
+        <EditText
+            android:layout_toRightOf="@id/txt2"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10dp"
+            android:id="@+id/edtxt2"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="LOGIN"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
